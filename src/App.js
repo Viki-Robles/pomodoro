@@ -8,10 +8,10 @@ import Timer from "./Components/Timer";
 class App extends Component {
   constructor() {
     super();
-    this.state ={
+    this.state = {
       breakLength: 5,
       sessionLength: 25,
-      timerMinute: 25
+      timePerSession: 25
     };
   }
 
@@ -19,9 +19,9 @@ class App extends Component {
     return (
       <main>
         <h2>Pomodoro Clock</h2>
-        <BreakInterval breakInterval={this.state.breakLength}/>
-        <SessionLength sessionLength={this.state.sessionLength}/>
-        <Timer timerMinute={this.state.timerMinute}/>
+        <BreakInterval breakInterval={this.state.breakLength} />
+        <SessionLength sessionLength={this.state.sessionLength} />
+        <Timer timePerSession={this.state.timePerSession} />
       </main>
     )
   }
