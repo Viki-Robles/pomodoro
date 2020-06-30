@@ -11,8 +11,8 @@ export default class Timer extends Component {
     render() {
         return (
             <>
-                <div>
-                    <div>
+                <div className="session-container">
+                    <div className="session-container-text">
                         <h4>
                             {
                                 this.state.isSession === true ? "Session" : "Break"

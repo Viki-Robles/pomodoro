@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 
 export default function BreakInterval({ breakInterval }) {
-    const [counter, setCounter] = useState(5);
 
     return (
-        <>
+        <div className="breakInterval">
             <button>Go up</button>
-            <p>{breakInterval}</p>
+            <div className="breakInterval-text">{breakInterval}</div>
             <button>Go Down</button>
-        </>
+        </div>
     );
 }
