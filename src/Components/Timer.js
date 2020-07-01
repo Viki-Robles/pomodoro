@@ -11,8 +11,8 @@ export default class Timer extends Component {
     render() {
         return (
             <>
-                <div className="time-container">
-                    <div className="time-container-text">
+                <div className="session-container">
+                    <div className="session-container-text">
                         <h4>
                             {
                                 this.state.isSession === true ? "Session" : "Break"
@@ -28,11 +28,6 @@ export default class Timer extends Component {
                         }</span>
                     </div>
                 </div>
-                <div className="timer-actions">
-                    <button>Play</button>
-                    <button>Stop</button>
-                    <button>Refresh</button>
-                    </div>
             </>
         );
     }
